@@ -323,14 +323,14 @@ $(document).ready(function($) {
 			tinymce.init({
 				entity_encoding: 'raw',
 				link_title: false,
-				plugins: ['link image'],
+				plugins: ['link image','media'],
 				menubar: false,
 				selector: '#post',
 				statusbar: false,
 				target_list: [
 					{title: 'New page', value: '_blank'},
 				],
-				toolbar: 'bold italic underline strikethrough | alignleft aligncenter alignright | link image | bullist numlist | blockquote | subscript superscript | removeformat'
+				toolbar: 'bold italic underline strikethrough | alignleft aligncenter alignright | link image | bullist numlist | blockquote | subscript superscript | removeformat | media'
 			});
 		} catch(e) {
 			console.log(e);
